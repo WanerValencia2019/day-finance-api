@@ -1,0 +1,14 @@
+
+
+services:
+  postgres:
+    image: postgres:12
+    container_name: postgres_day-finance
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: day-finance
+    volumes:
+      - ./data:/var/lib/postgresql/data
