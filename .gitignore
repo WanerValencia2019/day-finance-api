@@ -5,4 +5,4 @@ data
 
 __pycache__
 
-.environments/.prod.env
+environments
